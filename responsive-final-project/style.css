@@ -1,0 +1,105 @@
+/* universal settings */
+[class*="col-"] {
+    float: left;
+    padding: 1em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-main {
+    padding: 1em;
+    background-color: darkgray;
+}
+
+.title {
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+.row {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+ul {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* styling for responsive home page img */
+.profile {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* films */
+.col-sm-4 img {
+    margin-top: 0.5em;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* home/index */
+.info {
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    p {
+        font-size: 1.2em;
+    }
+
+    ul {
+        font-size: 1.2em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    p {
+        font-size: 1.3em;
+    }
+ 
+    ul {
+        font-size: 1.3em;
+    }
+}
